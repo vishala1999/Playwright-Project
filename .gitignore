@@ -41,7 +41,6 @@ package-lock.json
 .env
 
 # IDE files
-.vscode/
 .idea/
 
 # OS generated files
