@@ -7,7 +7,7 @@ export interface CucumberWorkConstructorParams {
     parameters: { [key: string]: string };
 }
 
-export interface CustomWorld extends World{
+export interface CustomWorld extends World {
     feature?: messages.Pickle;
     context?: BrowserContext;
     page?: Page;
@@ -17,12 +17,12 @@ export interface CustomWorld extends World{
     newPage?: Page;
     newContext?: BrowserContext;
     newContexts?: BrowserContext[];
-}   
+}
 
 export class CustomWorldImpl extends World implements CustomWorld {
     constructor(options: IWorldOptions) {
         super(options);
-    // debug = false;
+        // debug = false;
     }
 }
 
