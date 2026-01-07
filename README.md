@@ -15,6 +15,6 @@
     c. Use command "npm run test:parallel" to run all the tests available under feature folder parallely.
 
 4. Report Generation
-    a. Report in html format will be available in the "./report" location.
+    a. Report in html format will be available in the "./reports" location.
    
 
