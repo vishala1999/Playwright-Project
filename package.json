@@ -1,0 +1,30 @@
+{
+    "name": "playwright-project",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Playwright test project",
+    "scripts": {
+        "test": "cucumber-js --tags \"not @skip\"",
+        "test:parallel": "cucumber-js --tags \"not @skip\" --parallel=4",
+        "test:headed": "cucumber-js test --headed",
+        "test:debug": "cucumber-js test --debug"
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "10.3.1",
+        "@cucumber/html-formatter": "21.3.0",
+        "@playwright/test": "1.42.1",
+        "cucumber-console-formatter": "1.0.0",
+        "cucumber-html-reporter": "7.1.1",
+        "@cucumber/pretty-formatter": "1.1.0",
+        "install": "^0.13.0",
+        "jsonpath": "1.1.1"
+    },
+    "devDependencies": {
+        "@cucumber/pretty-formatter": "^2.4.1",
+        "@types/node": "^20.0.0",
+        "eslint": "8.57.0",
+        "prettier": "^2.8.0",
+        "ts-node": "^10.9.0",
+        "typescript": "5.4.2"
+    }
+}
