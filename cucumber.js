@@ -3,7 +3,7 @@ module.exports = {
         paths: ['tests/features/**/*.feature'],
         require: ['tests/src/**/*.ts'],
         requireModule: ['ts-node/register'],
-        format: ['progress', 'summary'],
+        format: ['summary', 'json:reports/cucumber-report.json', 'html:reports/cucumber-report.html'],
         // publishQuiet: true
     }
 };

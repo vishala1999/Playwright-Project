@@ -6,10 +6,6 @@ Given("Navigate to {string}", async function(url:string){
     const helperObj = new Helper(this.page!);
     await helperObj.navigateTo(url);
 })
-When('Search for {string}', async function(searchText:string){
-    const makeMyTripObj = new MakeMyTripPagePage(this.page!);
-    await makeMyTripObj.searchFor(searchText);
-})
 Then('Validate option {string} is select from menu', async function(resultText:string){
     const makeMyTripObj = new MakeMyTripPagePage(this.page!);
     await makeMyTripObj.validateSearhResults(resultText);
@@ -22,3 +18,19 @@ When('Click on {string} options', async function(optionName:string){
     const makeMyTripObj = new MakeMyTripPagePage(this.page!);
     await makeMyTripObj.clickOnOption(optionName);
 });
+Then('Search trains from {string} to {string} on date {string}', async function(fromCity:string, toCity:string, date:string){
+    const makeMyTripObj = new MakeMyTripPagePage(this.page!);
+    await makeMyTripObj.searchTrains(fromCity, toCity, date);
+});
+When('Click on search button', async function(){
+   const makeMyTripObj = new MakeMyTripPagePage(this.page!);
+    await makeMyTripObj.clickSearch();
+});
+Then('Validate search results displays train number {string}', async function(trainNumber:string){
+    const makeMyTripObj = new MakeMyTripPagePage(this.page!);
+    await makeMyTripObj.validateTrainNumber(trainNumber);
+});
+Then('Minimize bot popup', async function(){
+    const makeMyTripObj = new MakeMyTripPagePage(this.page!);
+    await makeMyTripObj.minimizeBot();
+})
