@@ -18,3 +18,5 @@
     a. Report in html format will be available in the "./reports" location.
    
 
+5. .gitignore
+    a. It ignores all the files mentioned in the file from tracking in the git changes
