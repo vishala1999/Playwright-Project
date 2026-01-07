@@ -5,7 +5,7 @@
     d. Playwright allows to perform API testing (GET,PUT,DELETE,POST requests and checking responses) within the same test flow as UI tests.
 
 2. Set up playwright
-    a. Clone repository "".
+    a. Clone repository "https://github.com/vishala1999/Playwright-Project.git".
     b. Open the project in VS Code.
     c. Run command "npm install" to install all the node modules from package.json.
 
